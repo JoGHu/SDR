@@ -1,7 +1,7 @@
-# SDR
+# Sufficient Dimension Reduction
 R functions to perform sufficient dimension reduction.
 
-## SIR
+## Sliced Inverse Regression
 ### SIR Function
 
 *Arguments*
@@ -17,7 +17,25 @@ R functions to perform sufficient dimension reduction.
 - lambda - eigenvalues of the SIR matrix
 - gamma - matrix containing the desired number of SIR directions
 
-### GetSDRDirs Function
+## Kernel Inverse Regression
+### KIR Function
+
+*Arguments*
+
+- X - covariate matrix
+- Y - response vector
+- b - bandwidth parameter
+- r - number of dimensions to return
+
+*Output*
+
+- lambda - eigenvalues of the SIR matrix
+- gamma - matrix containing the desired number of SIR directions
+
+## Miscellaneous
+### GetSDRDirs Function 
+
+- Purpose: Function to project covariates along SDR directions
 
 *Arguments*
 - betas - matrix of SDR directions
