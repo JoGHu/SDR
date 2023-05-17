@@ -10,7 +10,7 @@ R functions to perform sufficient dimension reduction.
 - y - response vector
 - h - number of slices
 - r - number of dimensions to return
-- ytpye - denotes whether response is continuous or categorical takes values of "cont" or "cat"
+- ytype - denotes whether response is continuous or categorical takes values of "cont" or "cat"
 
 *Output*
 
