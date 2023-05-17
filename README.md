@@ -2,7 +2,7 @@
 R functions to perform sufficient dimension reduction.
 
 ## SIR
-### SIR function
+### SIR Function
 
 *Arguments*
 
@@ -17,7 +17,7 @@ R functions to perform sufficient dimension reduction.
 - lambda - eigenvalues of the SIR matrix
 - gamma - matrix containing the desired number of SIR directions
 
-### GetSDRDirs
+### GetSDRDirs Function
 
 *Arguments*
 - betas - matrix of SDR directions
