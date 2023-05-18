@@ -131,3 +131,29 @@ SAVE <- function(X, y, h, r, ytype){
   return(list(lambda = eigdec$values, 
               gamma = signrt%*%eigdec$vectors[,1:r]))
 }
+
+# ------------------------------------------------------------------------------------
+
+#GetSDRDirs function
+#betas is matrix of desired eigenvectors to multiply by centered version of X
+#X is matrix of covariates
+
+GetSDRDirs <- function(betas, X){
+  
+  #Ensure X is of type matrix
+  X <- as.matrix(X)
+  
+  #Get dimensions of covariate matrix X
+  p <- ncol(X)
+  n <- nrow(X)
+  
+  #Get matrix whose rows are replicates of the overall mean vector
+  X.bar <- matrix(rep(as.numeric(colMeans(X)), 
+                      n),
+                  ncol = p, 
+                  nrow = n, 
+                  byrow = T)
+  
+  #Return SDR directions
+  return((X-X.bar)%*%betas)
+}
