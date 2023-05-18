@@ -60,8 +60,8 @@ R functions to perform inverse sufficient dimension reduction.
 
 *Output*
 
-- lambda - eigenvalues of the SIR matrix
-- gamma - matrix containing the desired number of SIR directions
+- lambda - eigenvalues of the SAVE matrix
+- gamma - matrix containing the desired number of SAVE directions
 
 ## Miscellaneous
 ### GetSDRDirs Function 
