@@ -47,6 +47,22 @@ R functions to perform inverse sufficient dimension reduction.
 - lambda - eigenvalues of the PIR matrix
 - gamma - matrix containing the desired number of PIR directions
 
+## Sliced Average Variance Estimation
+### SAVE Function
+
+*Arguments*
+
+- X - covariate matrix
+- y - response vector
+- h - number of slices
+- r - number of dimensions to return
+- ytype - denotes whether response is continuous or categorical takes values of "cont" or "cat"
+
+*Output*
+
+- lambda - eigenvalues of the SIR matrix
+- gamma - matrix containing the desired number of SIR directions
+
 ## Miscellaneous
 ### GetSDRDirs Function 
 
