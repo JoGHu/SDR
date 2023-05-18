@@ -1,5 +1,5 @@
 # Sufficient Dimension Reduction
-R functions to perform sufficient dimension reduction.
+R functions to perform inverse sufficient dimension reduction.
 
 ## Sliced Inverse Regression
 ### SIR Function
@@ -29,8 +29,23 @@ R functions to perform sufficient dimension reduction.
 
 *Output*
 
-- lambda - eigenvalues of the SIR matrix
-- gamma - matrix containing the desired number of SIR directions
+- lambda - eigenvalues of the KIR matrix
+- gamma - matrix containing the desired number of KIR directions
+
+## Parametric Inverse Regression
+### PIR Function
+
+*Arguments*
+
+- X - covariate matrix
+- y - response vector
+- m - vector whose entries are powers that response will be raised to
+- r - number of dimensions to return
+
+*Output*
+
+- lambda - eigenvalues of the PIR matrix
+- gamma - matrix containing the desired number of PIR directions
 
 ## Miscellaneous
 ### GetSDRDirs Function 
